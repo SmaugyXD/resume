@@ -41,32 +41,6 @@
 % \cvsubheading{DevOps / Sysadmin} % Subheading - your occupation/specialization
 
 %-------------------------------------------------------------------------------
-%  EDUCATION
-%-------------------------------------------------------------------------------
-
-\CVSection{Education}
-
-%------------------------------------------------
-
-\CVItem{B.S. in Computer Science}{
-  \textbf{Oregon State University}, 2018 - 2022
-}{
-  % Systems focus
-  % 3.48 GPA | Notable classes:
-
-  % \begin{itemize}
-  %   \item CS 312: System Administration
-  %   \item CS 344/444: Operating Systems I / II
-  %   \item CS 361/362: Software Design I / II
-  %   \item CS 472: Computer Architecture
-  % \end{itemize}
-}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%-------------------------------------------------------------------------------
 %  EXPERIENCE
 %-------------------------------------------------------------------------------
 
@@ -74,31 +48,57 @@
 
 %------------------------------------------------
 
-\CVItem{DevOps Engineer}{
-  \href{https://onecommons.org}{\textbf{OneCommons}}, 2022 - present
+\CVItem{Student Cybersecurity Analyst}{
+  \href{https://uit.oregonstate.edu/infosec}{\textbf{OSU SOC}}, 2022 - Present
 }{
   \begin{itemize}
-    \item Managed cloud-native Gitlab instance in GKE Kubernetes
-    \item Managed IAM roles and policies across AWS and GCP
-    \item Deployed Grafana monitoring and custom metrics
-    \item Implemented custom features in Gitlab fork
-  \end{itemize}
-}
-
-\CVItem{Student Systems Engineer}{
-  \href{https://osuosl.org}{\textbf{OSU Open Source Lab}}, 2019 - 2022
-}{
-  \begin{itemize}
-    \item Developed configuration management suites to configure systems
-    \item Maintained on-premise multi-arch fleet of Linux servers
-    \item Refactored and improved internal documentation and onboarding guides
-    \item Investigated and resolved customer infrastructure problems
-    \item Coordinated maintenance with customers to ensure minimal downtime
-    \item Developed comprehensive unit and integration testing suites
+    \item Wrote KQL Queries in Microsoft Sentinel for automation and ease of analyzing log  
+    \item Investigated and responded to phishing emails targeting end-point users
+    \item Performed network monitoring with Azure Sentinel, Splunk, Nessus and Zeek
+    \item Engaged in advanced threat hunting against massive phishing campaign
   \end{itemize}
 }
 
 %------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%-------------------------------------------------------------------------------
+%  PROJECTS
+%-------------------------------------------------------------------------------
+
+\CVSection{Project}
+
+\CVItem{Security Architecture and Engineering}{
+  \href{https://ortsoc.oregonstate.edu/}{\textbf{ORTSOC}}
+}{
+  \begin{itemize}
+    \item Improved previous iteration of Elastic Stack rules
+    \item Enforced FW/NAT rules and enable Geo-blocking for specific inbound/outbound
+    \item Refactored and improved internal documentations on infrastructure
+    \item Developed and tested Ansible playbooks for mass deployment
+  \end{itemize}
+}
+
+\CVItem{Deep Neuron Floor Plan}{
+  \href{https://github.com/yuanyuanmai/DeepNeuronFloorplan}{\textbf{OSU Capstone}}
+}{
+  \begin{itemize}
+    \item Implemented a neural network using Python to recognzie different features
+    \item Based on academic paper
+    \item Refactored and improved internal documentations on previous iteration of the code repository
+  \end{itemize}
+}
+
+\CVItem{E2E Chat Encrypted App}{
+  \href{https://github.com/Exiled1/Garble}{\textbf{CS427}}
+}{
+  \begin{itemize}
+    \item Developed an end-to-end encrypted chat app through Rust
+    \item Implemented hybrid encryption scheme for encrypting the chat system
+    \item Created an asychcronous networking stack for client/server communication
+  \end{itemize}
+}
 
 \Sep % Extra whitespace after the end of a major section
 
@@ -110,30 +110,26 @@
 
 %------------------------------------------------
 
-\CVItem{Club Vice President}{
-  \href{https://lug.oregonstate.edu}{\textbf{OSU Linux Users Group}}, 2021 - 2022
+\CVItem{Club Member}{
+  \href{https://osusec.org}{\textbf{OSU Security Club}}, 2019 - 2022
 }{
   \begin{itemize}
-    \item Wrote and presented talks on Linux-related topics
-    \item Maintained containerized infrastructure (Nginx, Hugo, Matrix Synapse)
-    % \item Implemented CI/CD pipeline to automate website updates
+    \item Gaining hands-on experience with vulnerablities on system and network levels
+    \item Involved in security community and CTFs activites
+    \item Participate different Cyber Defense Competitions
   \end{itemize}
 }
 
 %------------------------------------------------
 
-\CVItem{Club Member}{
-  \href{https://osusec.org}{\textbf{OSU Security Club}}, 2019 - 2022
-}{
-  \begin{itemize}
-    \item 5th place, 2022 National Collegiate CDC (Cyber Defense Competition)
-    \item 1st place, 2022 Pacific Rim Collegiate CDC
-    \item 1st place regionally, 7th nationally in 2021 DoE Cyberforce CDC
-    \item Designed and implemented on-demand VM provisioning and setup for \\
-          members using Discord bot commands
-          \hreficon{\gl{osusec/discord-bot/-/merge_requests/53}}
-  \end{itemize}
-}
+% \CVItem{Club Member}{
+%   \href{https://www.facebook.com/hcmcfinswimming/}{\textbf{Vietnamese Finswimming Club}}, 2007 - 2015
+% }{
+%   \begin{itemize}
+%     \item Focused on swimming and finswimming
+%     \item Involved in National Finswimming Competition U17
+%   \end{itemize}
+% }
 
 %------------------------------------------------
 
@@ -147,24 +143,24 @@
 
 %------------------------------------------------
 
-\CVItem{Open Source Contributions}{
-  \href{\gh{sous-chefs}}{\textbf{Chef Community Cookbooks}}
-}{
-  \begin{itemize}
-    \item Created \texttt{dnf\_module} resource in \texttt{yum} to manage DNF
-          module streams \hreficon{\gh{sous-chefs/yum/pull/195}}
-    \item Updated \texttt{yum-remi-chef} to support CentOS 8
-          \hreficon{\gh{sous-chefs/yum-remi-chef/pull/37}} and DNF modules
-          \hreficon{\gh{sous-chefs/yum-remi-chef/pull/40}}
-    \item Refactored \texttt{nfs} \hreficon{\gh{sous-chefs/nfs/pull/119}},
-          \texttt{chef-acme} \hreficon{\gh{schubergphilis/chef-acme/pull/128}},
-          and \texttt{composer} \hreficon{\gh{djoos-cookbooks/composer/pull/81}}
-          to use modern Chef features and test tooling
-    \item Refactored and merged \texttt{selinux} and \texttt{selinux-policy}
-          cookbooks with improved resources and tests
-          \hreficon{\gh{sous-chefs/selinux/pull/79}}
-  \end{itemize}
-}
+% \CVItem{Open Source Contributions}{
+%   \href{\gh{sous-chefs}}{\textbf{Chef Community Cookbooks}}
+% }{
+%   \begin{itemize}
+%     \item Created \texttt{dnf\_module} resource in \texttt{yum} to manage DNF
+%           module streams \hreficon{\gh{sous-chefs/yum/pull/195}}
+%     \item Updated \texttt{yum-remi-chef} to support CentOS 8
+%           \hreficon{\gh{sous-chefs/yum-remi-chef/pull/37}} and DNF modules
+%           \hreficon{\gh{sous-chefs/yum-remi-chef/pull/40}}
+%     \item Refactored \texttt{nfs} \hreficon{\gh{sous-chefs/nfs/pull/119}},
+%           \texttt{chef-acme} \hreficon{\gh{schubergphilis/chef-acme/pull/128}},
+%           and \texttt{composer} \hreficon{\gh{djoos-cookbooks/composer/pull/81}}
+%           to use modern Chef features and test tooling
+%     \item Refactored and merged \texttt{selinux} and \texttt{selinux-policy}
+%           cookbooks with improved resources and tests
+%           \hreficon{\gh{sous-chefs/selinux/pull/79}}
+%   \end{itemize}
+% }
 
 %------------------------------------------------
 
@@ -186,8 +182,9 @@
 %------------------------------------------------
 
 \CVItemHeader{Programming Languages}
-\begin{tabularx}{\linewidth}{X X X X l}
-  \bluebullet Ruby  & \bluebullet Python  & \bluebullet Shell  & \bluebullet C  & \bluebullet JavaScript
+\begin{tabularx}{\linewidth}{X X X l}
+  \bluebullet Python  & \bluebullet X84 Assembly & \bluebullet Shell & \bluebullet C/C++ \\
+  \bluebullet HTML/JS & \bluebullet Java
 \end{tabularx}
 
 \Sep
@@ -196,20 +193,126 @@
 
 \CVItemHeader{Tools \& Technologies}
 \begin{tabularx}{\linewidth}{X X X l}
-  \bluebullet Chef    & \bluebullet Linux   & \bluebullet Git         & \bluebullet GitHub  \\
-  \bluebullet AWS EC2 & \bluebullet GCP GKE & \bluebullet Kubernetes  & \bluebullet Docker  \\
-  \bluebullet Jenkins & \bluebullet HAProxy & \bluebullet BIND        & \bluebullet Nginx
+  \bluebullet Ansible        & \bluebullet Linux            & \bluebullet Git     & \bluebullet GitHub  \\
+  \bluebullet Window Server  & \bluebullet Active Directory & \bluebullet NodeRed & \bluebullet Docker  \\
+  \bluebullet Azure Sentinel 
 \end{tabularx}
-\Sep
+
+\Sep 
 
 %------------------------------------------------
 
-\CVItemHeader{Linux Experience}
-\begin{tabular}{l}
-  \bluebullet 4 years server management (CentOS, Ubuntu Server) \\
-  \bluebullet 7 years desktop use (Arch, Fedora, Ubuntu)
-\end{tabular}
+% \CVItemHeader{Linux Experience}
+% \begin{tabular}{l}
+%   \bluebullet 4 years server management (CentOS, Ubuntu Server) \\
+%   \bluebullet 7 years desktop use (Arch, Fedora, Ubuntu)
+% \end{tabular}
 
 %------------------------------------------------
+
+% \Sep % Extra whitespace after the end of a major section
+
+\framebreak
+\framebreak
+
+%-------------------------------------------------------------------------------
+%  AWARDS
+%-------------------------------------------------------------------------------
+
+\CVSection{Awards}
+
+%------------------------------------------------
+
+\CVItem{Cyber Defense Competitions}
+{
+  \begin{itemize}
+    \item 5th place, 2022 National Collegiate CDC
+    \item 1st place, 2022 Pacific Rim Collegiate CDC
+    \item 1st place regionally, 7th nationally in 2021 DoE Cyberforce CDC
+    \item 7th place regionally, 2021 Pacific Rim Collegiate CDC 
+  \end{itemize}
+}
+
+\Sep % Extra whitespace after the end of a major section
+
+%-------------------------------------------------------------------------------
+%  EDUCATION
+%-------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{B.S. in Computer Science}{
+  \textbf{Oregon State University}, 2020 - 2023
+}{
+  % Applied focus
+  % 3.48 GPA | Notable classes:
+
+  % \begin{itemize}
+  %   \item CS 312: System Administration
+  %   \item CS 344/444: Operating Systems I / II
+  %   \item CS 361/362: Software Design I / II
+  %   \item CS 472: Computer Architecture
+  % \end{itemize}
+}
+
+%------------------------------------------------
+
+\CVItem{A.S in Computer Science}{
+  \textbf{Green River College}, 2017 - 2019
+}{
+  % Systems focus
+  % 3.48 GPA | Notable classes:
+
+  % \begin{itemize}
+  %   \item CS 312: System Administration
+  %   \item CS 344/444: Operating Systems I / II
+  %   \item CS 361/362: Software Design I / II
+  %   \item CS 472: Computer Architecture
+  % \end{itemize}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%------------------------------------------------
+
+% \framebreak
+% \framebreak
+
+%------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%  References
+%-------------------------------------------------------------------------------
+
+% \CVSection{References}
+
+% %------------------------------------------------
+
+% \CVItem{Emily Longman}{
+%   \begin{itemize}
+%     \item Email: emily.longman@oregonstate.edu
+%     \item Phone: 360.975.2805
+%   \end{itemize}
+% }
+
+% \CVItem{Cameron McCawley}{
+%   \begin{itemize}
+%     \item Email: mccawlec@oregonstate.edu
+%     \item Phone: 515.520.5302
+%   \end{itemize}
+% }
+
+% \CVItem{Casey Colley}{
+%   \begin{itemize}
+%     \item Email: colleyc@oregonstate.edu
+%     \item Phone: 503.875.4945
+%   \end{itemize}
+% } 
+
+% \Sep % Extra whitespace after the end of a major section
 
 \end{document}

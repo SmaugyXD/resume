@@ -9,5 +9,9 @@ cover-letters/%: cover-letters/%.tex
 	latexrun $@.tex
 
 .PHONY:
+dei-statement/%: dei-statement/%.tex
+	latexrun $@.tex
+
+.PHONY:
 clean:
 	latexrun --clean-all
